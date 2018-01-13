@@ -5,6 +5,8 @@
     <mat-menu #rootMenu="matMenu">
 		  <button mat-menu-item [matMenuTriggerFor]="subMenu">Connect</button>
 		  <button mat-menu-item>Projects</button>
+		  <button mat-menu-item>Side Projects</button>
+		  <button mat-menu-item>Live Updates</button>
 		</mat-menu>
 
 		<mat-menu #subMenu="matMenu">
@@ -18,5 +20,39 @@
 		</button>
   </mat-toolbar-row>
 </mat-toolbar>
+<br>
+<br>
+<div>I have a passion for creating software, connecting services, tinkering with ideas, and automating everything </div>
+<mat-grid-list cols="4" rowHeight="100px">
+  <mat-grid-tile
+      *ngFor="let tile of tiles"
+      (click)="test(tile)"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color">
+    {{tile.text}}
+  </mat-grid-tile>
+</mat-grid-list>
+<br>
+
+<mat-card class="example-card" *ngIf="activeTile">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{activeTile.text}}</mat-card-title>
+    <!--mat-card-subtitle>{{activeTile.text}}</mat-card-subtitle-->
+  </mat-card-header>
+  <img mat-card-image src="{{activeTile.img}}">
+  <mat-card-content>
+    
+  </mat-card-content>
+  <!--mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions-->
+</mat-card>
+
+<div>
+	<!--mat-progress-bar mode="determinate" value="{{progressValue}}"></mat-progress-bar-->	
+</div>
 
 <router-outlet></router-outlet>

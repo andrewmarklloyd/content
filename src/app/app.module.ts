@@ -3,8 +3,13 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 
-import { MatMenuModule, MatButtonModule, MatToolbarModule, MatIconModule, MatCardModule } from '@angular/material';
-
+import { MatMenuModule,
+         MatButtonModule, 
+         MatToolbarModule, 
+         MatIconModule, 
+         MatCardModule } from '@angular/material';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { AppComponent } from './app.component';
 
 
@@ -20,7 +25,9 @@ import { AppComponent } from './app.component';
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
-    MatMenuModule
+    MatMenuModule,
+    MatProgressBarModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
