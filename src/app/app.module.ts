@@ -3,6 +3,9 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { MatSidenavModule } from '@angular/material/sidenav';
+
 import { MatMenuModule,
          MatButtonModule, 
          MatToolbarModule, 
@@ -27,7 +30,9 @@ import { AppComponent } from './app.component';
     MatCardModule,
     MatMenuModule,
     MatProgressBarModule,
-    MatGridListModule
+    MatGridListModule,
+    FlexLayoutModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
