@@ -4,27 +4,27 @@
     <span class="fill-remaining-space"></span>
 		
 		<div fxShow="true" fxHide.lt-sm="true">
+      <a href="#/" mat-button>Home</a>
       <mat-menu #connectMenu="matMenu">
-        <a mat-menu-item href="https://github.com/andrewmarklloyd/"><img width="23px" src="assets/github.png"> Github</a>
         <a mat-menu-item href="https://www.linkedin.com/in/andrewmarklloyd/"><img width="23px" src="assets/linkedin.png"> LinkedIn</a>
+        <a mat-menu-item href="https://github.com/andrewmarklloyd/"><img width="23px" src="assets/github.png"> Github</a>
         <a mat-menu-item href="mailto:andrew85.lloyd@gmail.com"><mat-icon>mail_outline</mat-icon> <span>Email</span></a>    
       </mat-menu>
         <a mat-button [matMenuTriggerFor]="connectMenu" href="#">Connect</a>
-			<a href="#" mat-button>Project</a>
-		  <a href="#" mat-button>Side Projects</a>
-		  <a href="#" mat-button>Live Updates</a>
+		  <a href="#/projects" mat-button>Projects</a>
+		  <a href="#/live-updates" mat-button>Live Updates</a>
 		</div>    
 		<div fxShow="true" fxHide.gt-xs="true">
 			<mat-menu #rootMenu="matMenu">
+        <a href="#/"><button mat-menu-item>Home</button></a>
 			  <button mat-menu-item [matMenuTriggerFor]="subMenu">Connect</button>
-			  <button mat-menu-item>Projects</button>
-			  <button mat-menu-item>Side Projects</button>
-			  <button mat-menu-item>Live Updates</button>
+			  <a href="#/projects"><button mat-menu-item>Projects</button></a>
+			  <a href="#/live-updates"><button mat-menu-item>Live Updates</button></a>
 			</mat-menu>
 
 			<mat-menu #subMenu="matMenu">
+        <a mat-menu-item href="https://www.linkedin.com/in/andrewmarklloyd/"><img width="23px" src="assets/linkedin.png"> LinkedIn</a>
 			  <a mat-menu-item href="https://github.com/andrewmarklloyd/"><img width="23px" src="assets/github.png"> Github</a>
-			  <a mat-menu-item href="https://www.linkedin.com/in/andrewmarklloyd/"><img width="23px" src="assets/linkedin.png"> LinkedIn</a>
 			  <a mat-menu-item href="mailto:andrew85.lloyd@gmail.com"><mat-icon>mail_outline</mat-icon> Email</a>
 			</mat-menu>
 
@@ -35,35 +35,6 @@
   </mat-toolbar-row>
 </mat-toolbar>
 <br>
-<br>
-
-<!--mat-grid-list cols="4" rowHeight="100px">
-  <mat-grid-tile
-      *ngFor="let tile of tiles"
-      (click)="test(tile)"
-      [colspan]="tile.cols"
-      [rowspan]="tile.rows"
-      [style.background]="tile.color">
-    {{tile.text}}
-  </mat-grid-tile>
-</mat-grid-list>
-<br>
-
-<mat-card class="example-card" *ngIf="activeTile">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>{{activeTile.text}}</mat-card-title>
-    <mat-card-subtitle>{{activeTile.text}}</mat-card-subtitle>
-  </mat-card-header>
-  <img mat-card-image src="{{activeTile.img}}">
-  <mat-card-content>
-    
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions>
-</mat-card-->
 
 
 <router-outlet></router-outlet>

@@ -15,10 +15,13 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { AppComponent } from './app.component';
 
+import { ProjectsComponent } from './components/projects-component/projects.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
