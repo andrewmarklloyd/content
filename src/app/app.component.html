@@ -4,7 +4,12 @@
     <span class="fill-remaining-space"></span>
 		
 		<div fxShow="true" fxHide.lt-sm="true">
-			<a href="#" mat-button>Connect</a>
+      <mat-menu #connectMenu="matMenu">
+        <a mat-menu-item href="https://github.com/andrewmarklloyd/"><img width="23px" src="assets/github.png"> Github</a>
+        <a mat-menu-item href="https://www.linkedin.com/in/andrewmarklloyd/"><img width="23px" src="assets/linkedin.png"> LinkedIn</a>
+        <a mat-menu-item href="mailto:andrew85.lloyd@gmail.com"><mat-icon>mail_outline</mat-icon> <span>Email</span></a>    
+      </mat-menu>
+        <a mat-button [matMenuTriggerFor]="connectMenu" href="#">Connect</a>
 			<a href="#" mat-button>Project</a>
 		  <a href="#" mat-button>Side Projects</a>
 		  <a href="#" mat-button>Live Updates</a>
@@ -18,9 +23,9 @@
 			</mat-menu>
 
 			<mat-menu #subMenu="matMenu">
-			  <a mat-menu-item href="https://github.com/andrewmarklloyd/"><img width="23px" src="assets/github.png"></a>
-			  <a mat-menu-item href="https://www.linkedin.com/in/andrewmarklloyd/"><img width="23px" src="assets/linkedin.png"></a>
-			  <a mat-menu-item href="mailto:andrew85.lloyd@gmail.com"><mat-icon>mail_outline</mat-icon></a>
+			  <a mat-menu-item href="https://github.com/andrewmarklloyd/"><img width="23px" src="assets/github.png"> Github</a>
+			  <a mat-menu-item href="https://www.linkedin.com/in/andrewmarklloyd/"><img width="23px" src="assets/linkedin.png"> LinkedIn</a>
+			  <a mat-menu-item href="mailto:andrew85.lloyd@gmail.com"><mat-icon>mail_outline</mat-icon> Email</a>
 			</mat-menu>
 
 			<button mat-icon-button [matMenuTriggerFor]="rootMenu">
