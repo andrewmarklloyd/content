@@ -9,12 +9,32 @@ export class ProjectsComponent {
   activeTile;
 
   tiles = [
-    {text: 'Creating Software', cols: 3, rows: 1, color: 'lightblue', img: 'http://lorempixel.com/300/200/animals'},
-    {text: 'Connecting Services', cols: 1, rows: 2, color: 'lightgreen', img: 'http://lorempixel.com/300/200/food'},
-    {text: 'Tinkering with ideas', cols: 1, rows: 1, color: 'lightpink', img: 'http://lorempixel.com/300/200/abstract'},
-    {text: 'Automating Everything', cols: 2, rows: 1, color: '#DDBDF1', img: 'http://lorempixel.com/300/200/sports'},
+    {
+      text: 'Military Kids Connect',
+      cols: 3,
+      rows: 1,
+      class: 'indigo1'
+    },
+    {
+      text: 'Aircrew App',
+      cols: 1,
+      rows: 2,
+      color: 'lightgreen',
+      class: 'indigo4'},
+    {
+      text: 'Git Workflow',
+      cols: 1,
+      rows: 1,
+      class: 'indigo3'
+    },
+    {
+      text: 'Volunteer Scheduler',
+      cols: 2,
+      rows: 1,
+      class: 'indigo2'
+    },
   ];
-
+  //SEDaily, STATUS board, PLA webmaster, Spotify bot, ROKU wifi remote
   updateProgressValue(progressValue) {
     var newProgressValue;
     if (progressValue < 100) {

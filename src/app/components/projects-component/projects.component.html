@@ -4,7 +4,8 @@
       (click)="test(tile)"
       [colspan]="tile.cols"
       [rowspan]="tile.rows"
-      [style.background]="tile.color">
+      [ngClass]="tile.class"
+      >
     {{tile.text}}
   </mat-grid-tile>
 </mat-grid-list>
