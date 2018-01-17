@@ -7,33 +7,52 @@ import { Component } from '@angular/core';
 })
 export class ProjectsComponent {
   activeTile;
+  showMore: boolean;
 
   tiles = [
     {
-      text: 'Military Kids Connect',
+      blockTitle: 'MKC Infographic',
+      title: 'Military Kids Connect Infographic',
+      subtitle: 'Interactive infographic to help children and youth cope with the issues that come with parent with PTSD.',
+      content: 'Here is some more text and a screenshot or video',
       cols: 3,
       rows: 1,
-      class: 'indigo1'
+      class: 'indigo1',
+      link: 'http://militarykidsconnect.dcoe.mil/what-is-ptsd',
+      more: true
     },
     {
-      text: 'Aircrew App',
+      blockTitle: 'Aircrew App',
+      title: 'Aircrew App',
       cols: 1,
       rows: 2,
-      color: 'lightgreen',
-      class: 'indigo4'},
+      class: 'indigo4'
+    },
     {
-      text: 'Git Workflow',
+      blockTitle: 'Git Workflow',
+      title: 'Git Workflow',
       cols: 1,
       rows: 1,
       class: 'indigo3'
     },
     {
-      text: 'Volunteer Scheduler',
+      blockTitle: 'Volunteer Scheduler',
+      title: 'Volunteer Scheduler',
       cols: 2,
       rows: 1,
       class: 'indigo2'
     },
   ];
+
+  constructor() {
+    this.activeTile = this.tiles[0];
+    this.showMore = false;
+  }
+
+  toggleMore() {
+    this.showMore = !this.showMore;
+  }
+
   //SEDaily, STATUS board, PLA webmaster, Spotify bot, ROKU wifi remote
   updateProgressValue(progressValue) {
     var newProgressValue;
