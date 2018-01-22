@@ -1,0 +1,42 @@
+{
+	"workProjects": [
+		{
+			"name": "status",
+			"displayName": "STATUS Board"
+		},
+		{
+			"name": "infographics",
+			"displayName": "Infographics"
+		}
+	],
+	"sideProjects": [
+		{
+			"name": "spotifyBot",
+			"displayName": "Spotify Bot"
+		},
+		{
+			"name": "rokuRemote",
+			"displayName": "ROKU Wifi Remote"
+		}
+	],
+	"openSource": [
+		{
+			"name": "sedailyApi",
+			"displayName": "Software Engineering Daily API"
+		},
+		{
+			"name": "sedailyEvents",
+			"displayName": "Software Engineering Daily Event Stream"
+		}
+	],
+	"other": [
+		{
+			"name": "plaWebmaster",
+			"displayName": "Professional Loadmaster Association Webmaster"
+		},
+		{
+			"name": "somethingElse",
+			"displayName": "Something Else"
+		}
+	]
+}

@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpModule } from '@angular/http';
 
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -16,6 +17,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { AppComponent } from './app.component';
 
 import { ProjectsComponent } from './components/projects-component/projects.component';
+import { ProjectsService } from './services/project.service';
 
 
 @NgModule({
@@ -35,9 +37,12 @@ import { ProjectsComponent } from './components/projects-component/projects.comp
     MatProgressBarModule,
     MatGridListModule,
     FlexLayoutModule,
-    MatSidenavModule
+    MatSidenavModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [
+    ProjectsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

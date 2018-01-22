@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ProjectsService } from '../../services/project.service';
 
 @Component({
   selector: 'app-projects',
@@ -6,54 +7,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
-  activeTile;
+  activeProjectType: Array<Object>;
+  activeProjectName;
   showMore: boolean;
+  projects: Object;
 
-  tiles = [
-    {
-      blockTitle: 'MKC Infographic',
-      title: 'Military Kids Connect Infographic',
-      subtitle: 'Interactive infographic to help children and youth cope with the issues that come with parent with PTSD.',
-      content: 'Here is some more text and a screenshot or video',
-      cols: 3,
-      rows: 1,
-      class: 'indigo1',
-      link: 'http://militarykidsconnect.dcoe.mil/what-is-ptsd',
-      more: true
-    },
-    {
-      blockTitle: 'Aircrew App',
-      title: 'Aircrew App',
-      cols: 1,
-      rows: 2,
-      class: 'indigo4'
-    },
-    {
-      blockTitle: 'Git Workflow',
-      title: 'Git Workflow',
-      cols: 1,
-      rows: 1,
-      class: 'indigo3'
-    },
-    {
-      blockTitle: 'Volunteer Scheduler',
-      title: 'Volunteer Scheduler',
-      cols: 2,
-      rows: 1,
-      class: 'indigo2'
-    },
-  ];
-
-  constructor() {
-    this.activeTile = this.tiles[0];
+  constructor(private projectService: ProjectsService) {
     this.showMore = false;
+    this.projectService.getProjects()
+      .subscribe(res => {
+        this.projects = JSON.parse(res.text());
+      })
   }
 
   toggleMore() {
     this.showMore = !this.showMore;
   }
 
-  //SEDaily, STATUS board, PLA webmaster, Spotify bot, ROKU wifi remote
   updateProgressValue(progressValue) {
     var newProgressValue;
     if (progressValue < 100) {
@@ -64,8 +34,10 @@ export class ProjectsComponent {
     return newProgressValue;
   }
 
-  test(tile) {
-    this.activeTile = tile;
+  test(projectType, projectName) {
+    this.activeProjectName = projectName
+    this.activeProjectType = this.projects[projectType];
+    console.log(this.activeProjectType)
   }
 
 }
