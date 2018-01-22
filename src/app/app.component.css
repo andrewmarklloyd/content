@@ -2,6 +2,6 @@
   flex: 1 1 auto;
 }
 
-a, u {
-    text-decoration: none;
+.footer {
+	padding-top: 40px;
 }

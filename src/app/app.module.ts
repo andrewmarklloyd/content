@@ -16,6 +16,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { AppComponent } from './app.component';
 
+import { HomeComponent } from './components/home-component/home.component';
 import { ProjectsComponent } from './components/projects-component/projects.component';
 import { ProjectsService } from './services/project.service';
 
@@ -23,7 +24,8 @@ import { ProjectsService } from './services/project.service';
 @NgModule({
   declarations: [
     AppComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
