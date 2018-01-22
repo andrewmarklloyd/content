@@ -2,6 +2,10 @@ a, u {
 	text-decoration: none;
 }
 
+.center-text {
+	text-align: center;
+}
+
 .indigo1 {
 	background: #E8EAF6;
 	color: #1A237E;
