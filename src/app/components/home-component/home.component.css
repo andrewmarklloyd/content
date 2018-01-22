@@ -2,8 +2,28 @@ a, u {
 	text-decoration: none;
 }
 
+img {
+	width: 100%;
+}
+
+.card-content {
+	padding-top: 30px;
+}
+
+.color-text {
+	color: #1A237E;
+}
+
 .center-text {
 	text-align: center;
+}
+
+.underline-text {
+	text-decoration: underline;
+}
+
+.desktop-card {
+	width: 40%;
 }
 
 .indigo1 {

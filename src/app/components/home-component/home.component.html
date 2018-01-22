@@ -1,24 +1,48 @@
+<!--Mobile sizes-->
 <div fxShow="true" fxHide.lt-sm="true">
-  
+  <div class="container"
+               fxLayout
+               fxLayoutAlign="center"
+               fxLayout.xs="column">
+    <mat-card>
+      <div fxFlex="95%">
+        <mat-card-header>
+          <span class="mat-title color-text">Software Engineer</span>
+        </mat-card-header>
+        <img mat-card-image src="assets/andrew.jpg" alt="Andrew Lloyd Esquire">  
+      </div>
+      
+      <div fxFlex="80%" class="card-content">
+        <mat-card-content>
+          <div *ngFor="let block of introText;">
+            <p class="color-text mat-body-2">
+              {{block.text}}
+            </p>
+          </div>
+        </mat-card-content>  
+      </div>
+    </mat-card>
+  </div>
 </div>
 
+<!--Desktop sizes-->
 <div fxShow="true" fxHide.gt-xs="true">
-  <div class="container" fxLayout fxLayoutAlign="left"
-      >
+  <div class="container" fxLayout fxLayoutAlign="center">
     <div>
-      <mat-card class="example-card">
+      <mat-card>
         <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title class="mat-title">Software Engineer</mat-card-title>
-          <mat-card-subtitle></mat-card-subtitle>
+          <div class="mat-title color-text">Software Engineer</div>
         </mat-card-header>
-        <img mat-card-image src="assets/andrew.jpg" alt="Photo of a Shiba Inu">
-        <mat-card-content>
-          <p>
-            Andrew wasn't always a software engineer, but now he is.
-          </p>
+        <img src="assets/andrew.jpg" alt="Andrew Lloyd Esquire">
+        <mat-card-content class="color-text">
+          <div *ngFor="let block of introText;">
+            <p>
+              {{block.text}}
+            </p>
+          </div>
+          <p>Check out the <a href="/#/projects" class="underline-text">projects</a> page for more.</p>
         </mat-card-content>
-        <mat-card-actions>
+        <mat-card-actions class="color-text">
           <button mat-button>MORE</button>
         </mat-card-actions>
       </mat-card>

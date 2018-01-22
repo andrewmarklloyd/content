@@ -1,5 +1,13 @@
+a, u {
+	text-decoration: none;
+}
+
 .fill-remaining-space {
   flex: 1 1 auto;
+}
+
+.underline-text {
+	text-decoration: underline;
 }
 
 .footer {

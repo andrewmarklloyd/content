@@ -13,4 +13,8 @@ export class ProjectsService {
   	return this.http.get('assets/api/projects.json');
   }
 
+  getBiography() {
+		return this.http.get('assets/api/biography.json');
+  }
+
 }
