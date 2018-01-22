@@ -1,30 +1,37 @@
-<mat-grid-list cols="4" rowHeight="100px">
-  <mat-grid-tile
-      *ngFor="let tile of tiles"
-      (click)="test(tile)"
-      [colspan]="tile.cols"
-      [rowspan]="tile.rows"
-      [ngClass]="tile.class"
+<div class="container" fxLayout fxLayoutAlign="center"
       >
-    {{tile.blockTitle}}
-  </mat-grid-tile>
-</mat-grid-list>
-<br>
-<mat-card *ngIf="activeTile">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>{{activeTile.title}}</mat-card-title>
-    <mat-card-subtitle>{{activeTile.subtitle}}</mat-card-subtitle>
-  </mat-card-header>
+  <div fxFlex.gt-sm="85%" fxFlex.gt-xs="95%">
+    <mat-grid-list cols="4" rowHeight="100px">
+      <mat-grid-tile
+          *ngFor="let tile of tiles"
+          (click)="test(tile)"
+          [colspan]="tile.cols"
+          [rowspan]="tile.rows"
+          [ngClass]="tile.class"
+          >
+        {{tile.blockTitle}}
+      </mat-grid-tile>
+    </mat-grid-list>
+    <br>
+    <mat-card *ngIf="activeTile">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{activeTile.title}}</mat-card-title>
+        <mat-card-subtitle>{{activeTile.subtitle}}</mat-card-subtitle>
+      </mat-card-header>
+      
+      <mat-card-actions>
+        <a *ngIf="activeTile.link" [href]="activeTile.link"><button mat-button>LINK</button></a>
+        <a *ngIf="activeTile.more"><button (click)="toggleMore()" mat-button>MORE</button></a>
+      </mat-card-actions>
+    </mat-card>
+    <br>
+    <mat-card *ngIf="showMore">
+      <mat-card-content>
+        {{activeTile.content}}
+      </mat-card-content>
+    </mat-card>  
+  </div>
   
-  <mat-card-actions>
-    <a *ngIf="activeTile.link" [href]="activeTile.link"><button mat-button>LINK</button></a>
-    <a *ngIf="activeTile.more"><button (click)="toggleMore()" mat-button>MORE</button></a>
-  </mat-card-actions>
-</mat-card>
-<br>
-<mat-card *ngIf="showMore">
-  <mat-card-content>
-    {{activeTile.content}}
-  </mat-card-content>
-</mat-card>
+  
+</div>
