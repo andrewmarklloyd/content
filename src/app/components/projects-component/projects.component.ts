@@ -7,21 +7,24 @@ import { ProjectsService } from '../../services/project.service';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
-  activeProjectType: Array<Object>;
-  activeProjectName;
+  activeProjectType: Object;
   showMore: boolean;
-  projects: Object;
+  toggleText: String;
+  projects: Array<Object>;
 
   constructor(private projectService: ProjectsService) {
     this.showMore = false;
+    this.toggleText = 'MORE';
     this.projectService.getProjects()
       .subscribe(res => {
         this.projects = JSON.parse(res.text());
+        this.activeProjectType = this.projects[0];
       })
   }
 
   toggleMore() {
     this.showMore = !this.showMore;
+    this.toggleText = this.showMore ? 'LESS' : 'MORE';
   }
 
   updateProgressValue(progressValue) {
@@ -34,10 +37,25 @@ export class ProjectsComponent {
     return newProgressValue;
   }
 
-  test(projectType, projectName) {
-    this.activeProjectName = projectName
-    this.activeProjectType = this.projects[projectType];
-    console.log(this.activeProjectType)
+  test(projectType) {
+    const index = this.getProjectType(projectType, this.projects);
+    this.activeProjectType = this.projects[index];
+    if (this.showMore) {
+      this.toggleMore();
+    }
+  }
+
+  getProjectType(projectType: String, projects: Array<Object>) {
+    var projectIndex;
+    var i = 0;
+    projects.forEach(project => {
+      if (project['projectType'] === projectType) {
+        projectIndex = i;
+        return;
+      }
+      i++;
+    })
+    return projectIndex;
   }
 
 }

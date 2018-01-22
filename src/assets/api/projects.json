@@ -1,42 +1,59 @@
-{
-	"workProjects": [
-		{
-			"name": "status",
-			"displayName": "STATUS Board"
-		},
-		{
-			"name": "infographics",
-			"displayName": "Infographics"
-		}
-	],
-	"sideProjects": [
-		{
-			"name": "spotifyBot",
-			"displayName": "Spotify Bot"
-		},
-		{
-			"name": "rokuRemote",
-			"displayName": "ROKU Wifi Remote"
-		}
-	],
-	"openSource": [
-		{
-			"name": "sedailyApi",
-			"displayName": "Software Engineering Daily API"
-		},
-		{
-			"name": "sedailyEvents",
-			"displayName": "Software Engineering Daily Event Stream"
-		}
-	],
-	"other": [
-		{
-			"name": "plaWebmaster",
-			"displayName": "Professional Loadmaster Association Webmaster"
-		},
-		{
-			"name": "somethingElse",
-			"displayName": "Something Else"
-		}
-	]
-}
+[
+	{
+		"projectType": "workProjects",
+		"projectTypeDisplayName": "Work Projects",
+		"projectsData": [
+			{
+				"name": "status",
+				"displayName": "STATUS Board",
+				"description": "I led my team in architecting, designing, and developing a team status dashboard. The dashboard displays information that is updated continuously with asynchronous request handling via the sockets.io Javascript library. The stack is Angular 4 front end with a Node.js and Postgres API server. The backend server makes periodic requests to  update the front end with new data. Its cron-type scheduling makes calls to our GitLab API for open issues, merge requests, and build statuses. The server also uses Bugzilla’s API to collect bug information as well as maintain team member’s in/out status, QA server uptime stats, and project progress stats. We also threw in the three day forecast and travel times to four cities using Google API’s. Each component is entirely separate and is updated as its data is returned from the backend."
+			},
+			{
+				"name": "infographics",
+				"displayName": "Infographics"
+			}
+		]
+	},
+	{
+		"projectType": "sideProjects",
+		"projectTypeDisplayName": "Side Projects",
+		"projectsData": [
+			{
+				"name": "spotifyBot",
+				"displayName": "Spotify Bot"
+			},
+			{
+				"name": "rokuRemote",
+				"displayName": "ROKU Wifi Remote"
+			}
+		]
+	},
+	{
+		"projectType": "openSource",
+		"projectTypeDisplayName": "Open Source",
+		"projectsData": [
+			{
+				"name": "sedailyApi",
+				"displayName": "Software Engineering Daily API"
+			},
+			{
+				"name": "sedailyEvents",
+				"displayName": "Software Engineering Daily Event Stream"
+			}
+		]
+	},
+	{
+		"projectType": "other",
+		"projectTypeDisplayName": "Other",
+		"projectsData": [
+			{
+				"name": "plaWebmaster",
+				"displayName": "Professional Loadmaster Association Webmaster"
+			},
+			{
+				"name": "somethingElse",
+				"displayName": "Something Else"
+			}
+		]
+	}
+]

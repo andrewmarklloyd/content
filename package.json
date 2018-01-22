@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --host 0.0.0.0",
     "build": "ng build --prod",
     "build:deploy": "ng build --prod --base-href \"https://andrewmarklloyd.github.io/content/\"",
     "test": "ng test",
