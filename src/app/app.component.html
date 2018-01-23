@@ -12,14 +12,14 @@
       </mat-menu>
         <a mat-button [matMenuTriggerFor]="connectMenu">Connect</a>
 		  <a href="#/projects" mat-button>Projects</a>
-		  <a href="#/live-updates" mat-button>Live Updates</a>
+		  <a href="#/blog" mat-button>Blog</a>
 		</div>    
 		<div fxShow="true" fxHide.gt-xs="true">
 			<mat-menu #rootMenu="matMenu">
         <a href="#/"><button mat-menu-item>Home</button></a>
 			  <button mat-menu-item [matMenuTriggerFor]="subMenu">Connect</button>
 			  <a href="#/projects"><button mat-menu-item>Projects</button></a>
-			  <a href="#/live-updates"><button mat-menu-item>Live Updates</button></a>
+			  <a href="#/blog"><button mat-menu-item>Blog</button></a>
 			</mat-menu>
 
 			<mat-menu #subMenu="matMenu">

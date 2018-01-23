@@ -18,6 +18,7 @@ import { AppComponent } from './app.component';
 
 import { HomeComponent } from './components/home-component/home.component';
 import { ProjectsComponent } from './components/projects-component/projects.component';
+import { BlogComponent } from './components/blog-component/blog.component';
 import { ProjectsService } from './services/project.service';
 
 
@@ -25,7 +26,8 @@ import { ProjectsService } from './services/project.service';
   declarations: [
     AppComponent,
     ProjectsComponent,
-    HomeComponent
+    HomeComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
