@@ -1,0 +1,6 @@
+<div *ngIf="postsLoaded">
+	<div *ngFor="let post of posts;">
+		<div class="mat-title">{{post.title}}</div>
+		<div [innerHTML]="post.content"></div>
+	</div>	
+</div>
