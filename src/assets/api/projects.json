@@ -6,7 +6,8 @@
 			{
 				"name": "status",
 				"displayName": "S.T.A.T.U.S. Board",
-				"description": "I led my team in architecting, designing, and developing a team status dashboard. The dashboard displays information that is updated continuously with asynchronous request handling via the sockets.io Javascript library. The stack is Angular 4 front end with a Node.js and Postgres API server. The backend server makes periodic requests to  update the front end with new data. Its cron-type scheduling makes calls to our GitLab API for open issues, merge requests, and build statuses. The server also uses Bugzilla’s API to collect bug information as well as maintain team member’s in/out status, QA server uptime stats, and project progress stats. We also threw in the three day forecast and travel times to four cities using Google API’s. Each component is entirely separate and is updated as its data is returned from the backend."
+				"description": "I led my team in architecting, designing, and developing a team status dashboard. The dashboard displays information that is updated continuously with asynchronous request handling via the sockets.io Javascript library. The stack is Angular 4 front end with a Node.js and Postgres API server. The backend server makes periodic requests to  update the front end with new data. Its cron-type scheduling makes calls to our GitLab API for open issues, merge requests, and build statuses. The server also uses Bugzilla’s API to collect bug information as well as maintain team member’s in/out status, QA server uptime stats, and project progress stats. We also threw in the three day forecast and travel times to four cities using Google API’s. Each component is entirely separate and is updated as its data is returned from the backend.",
+				"graphic": "assets/projects/status.png"
 			},
 			{
 				"name": "infographics",
@@ -17,7 +18,7 @@
 			{
 				"name": "messageBoard",
 				"displayName": "MKC Message Board",
-				"description": "My first project as a web devloper at T2. I helped build the API for getting and submitting threads, as well as managing the user profile information.",
+				"description": "The Military Kids Connect message board allows kids to talk about their unique experiences. My first project as a web devloper at T2. I helped build the API for getting and submitting threads, as well as managing the user profile information.",
 				"link": "http://militarykidsconnect.dcoe.mil/mboard/"
 			},
 			{
@@ -29,20 +30,19 @@
 			{
 				"name": "dockerMkc",
 				"displayName": "Dockerized Developement Environment",
-				"description": "Our stack was very difficult to locally configure and was wasting a lot of developer time. I created dockerized dev environment.",
-				"link": ""
+				"description": "Our stack was very difficult to locally configure and was wasting a lot of developer time. I created dockerized dev environment."
 			},
 			{
 				"name": "jenkinsBuildRelease",
 				"displayName": "Automated Deployment Package",
 				"description": "Our deployment 'process,' if that's what you call it, was unstable, error prone, and more accurately non-existent. I organized my team to coordinate a Gitlab and Jenkins combined job to build our deployment package.",
-				"link": ""
+				"graphic": "assets/projects/Jenkins_Build_Release.png"
 			},
 			{
 				"name": "gitgraph",
 				"displayName": "Interactive Git Diagrams",
 				"description": "I built a small web app to display interactive git branching and merging illustrations using Gitgraph.js",
-				"link": ""
+				"graphic": "assets/projects/mkc-branching.gif"
 			}
 		]
 	},

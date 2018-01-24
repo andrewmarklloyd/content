@@ -55,10 +55,10 @@
                 {{project.description}}
               </div>
           </mat-card-content>
-          <!--mat-card-actions>
-            <a *ngIf="activeTile" [href]="activeTile"><button mat-button>LINK</button></a>
-            <a><button (click)="toggleMore()" mat-button>{{toggleText}}</button></a>
-          </mat-card-actions-->
+          <img *ngIf="project.graphic" mat-card-image [src]="project.graphic">
+          <mat-card-actions>
+            <a *ngIf="project.link" [href]="project.link"><button mat-button>LINK</button></a>
+          </mat-card-actions>
         </mat-card>
       </div>
     </div>
