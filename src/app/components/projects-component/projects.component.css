@@ -6,6 +6,10 @@ a, u {
 	text-align: center;
 }
 
+.project-block {
+	padding-bottom: 10px;
+}
+
 .indigo1 {
 	background: #E8EAF6;
 	color: #1A237E;
