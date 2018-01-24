@@ -13,7 +13,7 @@ export class BlogComponent {
   postsLoaded: boolean;
 
   constructor() {
-  	this.google = window['google']
+  	/*this.google = window['google']
   	this.google.load("gdata", "1.x", { packages : ["blogger"] });
   	var self = this;
   	this.google.setOnLoadCallback(function(){
@@ -22,7 +22,7 @@ export class BlogComponent {
   			self.posts = posts;
   			self.postsLoaded = true;
   		})
-  	});
+  	});*/
   }
 
   _run(callback) {
@@ -36,7 +36,9 @@ export class BlogComponent {
     		posts.push(
     			{
     				title: entry.getTitle().getText(),
-    				content: entry.getContent().getText()
+    				content: entry.getContent().getText(),
+    				postPublished: this.google.gdata.DateTime.toIso8601(entry.getPublished().getValue()).substring(0,10),
+    				url: entry.getHtmlLink().getHref()
     			})
     	})
     	callback(posts)
@@ -44,9 +46,5 @@ export class BlogComponent {
     }, (b) => {
     	console.log('error:', b)
     });
-    /*
-          var postEntry = postsFeedRoot.feed.getEntries()[0]; // only get first post
-          var entryUri = postEntry.getSelfLink().getHref();   // post's uri
-    */
   }
 }
