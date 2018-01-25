@@ -11,6 +11,10 @@ a, u {
   background-size: cover;
 }
 
+.card-block {
+	padding-bottom: 15px;
+}
+
 .indigo1 {
 	background: #E8EAF6;
 	color: #1A237E;

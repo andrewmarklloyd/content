@@ -17,4 +17,8 @@ export class ProjectsService {
 		return this.http.get('assets/api/biography.json');
   }
 
+  getBlogPosts() {
+		return this.http.get('https://wt-1364ed7c3f0364e6608ffd3c14d53518-0.run.webtask.io/blog-posts');
+  }
+
 }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RequestOptions } from '@angular/http';
+import { ProjectsService } from '../../services/project.service';
 
 @Component({
   selector: 'app-blog',
@@ -7,44 +8,37 @@ import { RequestOptions } from '@angular/http';
   styleUrls: ['./blog.component.css']
 })
 export class BlogComponent {
-  
-  google;
   posts;
-  postsLoaded: boolean;
+  loading: boolean;
 
-  constructor() {
-  	/*this.google = window['google']
-  	this.google.load("gdata", "1.x", { packages : ["blogger"] });
-  	var self = this;
-  	this.google.setOnLoadCallback(function(){
-  		self._run(function(posts){
-  			console.log('done')
-  			self.posts = posts;
-  			self.postsLoaded = true;
-  		})
-  	});*/
+  constructor(private projectService: ProjectsService) {
+    this.loading = true;
+    this.posts = [];
+    this.projectService.getBlogPosts()
+      .subscribe(res => {
+        const feed = res.json().feed.entry;
+        feed.forEach(post => {
+          var title;
+          var postPublished;
+          var url;
+          var content;
+          this.posts.push({
+            title: post.title['$t'],
+            postPublished: post.published['$t'].substring(0, 10),
+            url: post.link[4].href,
+            content: post.content['$t']
+          })
+          this.loading = false;
+        })
+      })
   }
 
-  _run(callback) {
-  	var bloggerService =
-            new this.google.gdata.blogger.BloggerService('andrewmarklloyd.github.io')
-    var feedUri = 'https://andrewmarklloyd.blogspot.com/feeds/posts/default';
-    var posts = []
-    bloggerService.getBlogPostFeed(feedUri, (data) => {
-    	const entries = data.feed.getEntries();
-    	entries.forEach(entry => {
-    		posts.push(
-    			{
-    				title: entry.getTitle().getText(),
-    				content: entry.getContent().getText(),
-    				postPublished: this.google.gdata.DateTime.toIso8601(entry.getPublished().getValue()).substring(0,10),
-    				url: entry.getHtmlLink().getHref()
-    			})
-    	})
-    	callback(posts)
+  /*
+  * 
+  */
+  getPostLink() {
 
-    }, (b) => {
-    	console.log('error:', b)
-    });
   }
+
+  
 }
