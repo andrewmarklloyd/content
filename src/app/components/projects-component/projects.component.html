@@ -52,10 +52,13 @@
           </mat-card-header>
           <mat-card-content>
             <div class="mat-body-1">
-                {{project.description}}
-              </div>
+              {{project.description}}
+            </div>
+            <div class="project-image" *ngIf="project.graphic">
+          		<a [attr.href]="project.graphic"><img mat-card-image [src]="project.graphic"></a>
+          	</div>
           </mat-card-content>
-          <img *ngIf="project.graphic" mat-card-image [src]="project.graphic">
+          
           <mat-card-actions>
             <a *ngIf="project.link" [href]="project.link"><button mat-button>LINK</button></a>
           </mat-card-actions>
