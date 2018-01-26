@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RequestOptions } from '@angular/http';
+import { Ng4LoadingSpinnerService } from 'ng4-loading-spinner';
 import { ProjectsService } from '../../services/project.service';
 
 @Component({
@@ -9,10 +10,10 @@ import { ProjectsService } from '../../services/project.service';
 })
 export class BlogComponent {
   posts;
-  loading: boolean;
 
-  constructor(private projectService: ProjectsService) {
-    this.loading = true;
+  constructor(private projectService: ProjectsService,
+              private spinnerService: Ng4LoadingSpinnerService) {
+    this.spinnerService.show();
     this.posts = [];
     this.projectService.getBlogPosts()
       .subscribe(res => {
@@ -28,7 +29,7 @@ export class BlogComponent {
             url: post.link[4].href,
             content: post.content['$t']
           })
-          this.loading = false;
+          this.spinnerService.hide();
         })
       })
   }

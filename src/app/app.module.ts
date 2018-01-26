@@ -4,6 +4,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpModule } from '@angular/http';
 
+import { Ng4LoadingSpinnerModule } from 'ng4-loading-spinner';
+
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { MatSidenavModule } from '@angular/material/sidenav';
 
@@ -42,7 +44,8 @@ import { ProjectsService } from './services/project.service';
     MatGridListModule,
     FlexLayoutModule,
     MatSidenavModule,
-    HttpModule
+    HttpModule,
+    Ng4LoadingSpinnerModule.forRoot()
   ],
   providers: [
     ProjectsService
