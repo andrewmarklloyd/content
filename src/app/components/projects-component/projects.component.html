@@ -45,7 +45,7 @@
         <mat-card class="mat-padding">
           <mat-card-header>
             <mat-card-title>
-              <div class="mat-subheading-2">
+              <div class="mat-subheading-2 project-title">
                 {{project.displayName}}
               </div>
             </mat-card-title>
@@ -57,10 +57,14 @@
             <div class="project-image" *ngIf="project.graphic">
           		<a [attr.href]="project.graphic"><img mat-card-image [src]="project.graphic"></a>
           	</div>
+            <div *ngIf="showEmbedContent && project.embed">
+              <iframe class="project-image" src="https://open.spotify.com/embed/user/andrewlloyd85/playlist/1QjNtwvJJjKMHvmfN4imwo" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+            </div>
           </mat-card-content>
           
           <mat-card-actions>
             <a *ngIf="project.link" [href]="project.link"><button mat-button>LINK</button></a>
+            <a *ngIf="project.embed"><button (click)="toggleEmbedContent()" mat-button>{{project.embed.buttonText}}</button></a>
           </mat-card-actions>
         </mat-card>
       </div>

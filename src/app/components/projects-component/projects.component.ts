@@ -7,18 +7,20 @@ import { ProjectsService } from '../../services/project.service';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent {
+  showEmbedContent: boolean;
   activeProjectType: Object;
   showMore: boolean;
   toggleText: String;
   projects: Array<Object>;
 
   constructor(private projectService: ProjectsService) {
+    this.showEmbedContent = false;
     this.showMore = false;
     this.toggleText = 'MORE';
     this.projectService.getProjects()
       .subscribe(res => {
         this.projects = JSON.parse(res.text());
-        this.activeProjectType = this.projects[0];
+        this.activeProjectType = this.projects[1];
       })
   }
 
@@ -56,6 +58,10 @@ export class ProjectsComponent {
       i++;
     })
     return projectIndex;
+  }
+
+  toggleEmbedContent() {
+    this.showEmbedContent = !this.showEmbedContent;
   }
 
 }

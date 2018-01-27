@@ -6,9 +6,17 @@ a, u {
 	text-align: center;
 }
 
-.project-image {
-	max-width: 90%;
+.project-title {
+	font-weight: bold;
+}
+
+.project-embed {
 	margin-top: 30px;
+}
+
+.project-image {
+	max-width: 92%;
+	margin-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
 }
