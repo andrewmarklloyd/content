@@ -6,19 +6,19 @@
 			{
 				"name": "status",
 				"displayName": "S.T.A.T.U.S. Board",
-				"description": "I led my team in architecting, designing, and developing a team status dashboard. The dashboard displays information that is updated continuously with asynchronous request handling via the sockets.io Javascript library. The stack is Angular 4 front end with a Node.js and Postgres API server. The backend server makes periodic requests to  update the front end with new data. Its cron-type scheduling makes calls to our GitLab API for open issues, merge requests, and build statuses. The server also uses Bugzilla’s API to collect bug information as well as maintain team member’s in/out status, QA server uptime stats, and project progress stats. We also threw in the three day forecast and travel times to four cities using Google API’s. Each component is entirely separate and is updated as its data is returned from the backend.",
+				"description": "I led my team in architecting and developing a team status dashboard. The Angular 4 dashboard is updated in real time with via the Sockets.io connection to a Node.js server. The server makes periodic requests to GitLab, Bugzilla, Google Calendar, QA servers, and a Postgres database to aggregate data and send to the front end.",
 				"graphic": "assets/projects/status.png"
 			},
 			{
 				"name": "infographics",
 				"displayName": "MKC Infographic",
-				"description": "I took over as tech lead during dev of this project.",
+				"description": "One of the more rewarding projects I've been a part of, the interactive infographics aims to engage and inform military kids and youth about post-traumatic stress disorder and traumatic brain injury. I helped develop the API for the Ember.js front end to connect to. I also took over as technical lead during devevelopment of this project.",
 				"link": "http://militarykidsconnect.dcoe.mil/what-is-ptsd/"
 			},
 			{
 				"name": "messageBoard",
 				"displayName": "MKC Message Board",
-				"description": "The Military Kids Connect message board allows kids to talk about their unique experiences. My first project as a web devloper at T2. I helped build the API for getting and submitting threads, as well as managing the user profile information.",
+				"description": "The Military Kids Connect message board allows kids to talk about their unique experiences. In my first project as a web devloper, I helped build the API for getting and submitting threads as well as managing the user profile information.",
 				"link": "http://militarykidsconnect.dcoe.mil/mboard/"
 			},
 			{
@@ -30,18 +30,18 @@
 			{
 				"name": "dockerMkc",
 				"displayName": "Dockerized Developement Environment",
-				"description": "Our stack was very difficult to locally configure and was wasting a lot of developer time. I created dockerized dev environment."
+				"description": "Our Drupal, IIS, and SQL Server stack was very difficult to locally configure and was wasting a lot of developer time. I created Dockerized development environment and accompanying scripts allowing developers to have an up and running environment in minutes."
 			},
 			{
 				"name": "jenkinsBuildRelease",
 				"displayName": "Automated Deployment Package",
-				"description": "Our deployment 'process,' if that's what you call it, was unstable, error prone, and more accurately non-existent. I organized my team to coordinate a Gitlab and Jenkins combined job to build our deployment package.",
+				"description": "Our deployment process was unstable, error prone, and more accurately non-existent. It involved estimating the last code deployment date, performing a git diff of the current code base and that commit, and manually filtering out files that didn't need to be deployed. Things got more complicated when two different JS frameworks that required build processes were introduced to the repository. I organized my team to coordinate a Gitlab and Jenkins pipeline to build our deployment package.",
 				"graphic": "assets/projects/Jenkins_Build_Release.png"
 			},
 			{
 				"name": "gitgraph",
 				"displayName": "Interactive Git Diagrams",
-				"description": "I built a small web app to display interactive git branching and merging illustrations using Gitgraph.js",
+				"description": "In order to standardize git workflows between all teams in my organization, I built a small web app to display interactive git branching and merging illustrations for each team using Gitgraph.js",
 				"graphic": "assets/projects/mkc-branching.gif"
 			}
 		]
@@ -52,11 +52,16 @@
 		"projectsData": [
 			{
 				"name": "spotifyBot",
-				"displayName": "Spotify Bot"
+				"displayName": "Spotify Bot",
+				"description": "This is one of my favorite tools that I wrote and I use it almost every day. Mondays and Fridays Spotify's algorithm builds personalized playlists for me. This bot cross references songs in these playlists against songs that I've added to my library and adds them to a new playlist. This allows me to store all of the songs in these playlists that I like. Click the link below to show the playlist.",
+				"embed": {
+					"buttonText": "Toggle Playlist"
+				}
 			},
 			{
 				"name": "rokuRemote",
-				"displayName": "ROKU Wifi Remote"
+				"displayName": "ROKU Wifi Remote",
+				"description": "When my dog Einstein chewed my Roku remote to pieces I was too lazy to buy a new remote. However, I wasn't too lazy to research the Roku external control HTTP API and build a web remote served from my Raspberry Pi."
 			}
 		]
 	},
