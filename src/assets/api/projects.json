@@ -61,7 +61,7 @@
 			{
 				"name": "rokuRemote",
 				"displayName": "ROKU Wifi Remote",
-				"description": "When my dog Einstein chewed my Roku remote to pieces I was too lazy to buy a new remote. However, I wasn't too lazy to research the Roku external control HTTP API and build a web remote served from my Raspberry Pi."
+				"description": "When my dog Einstein chewed my Roku remote to pieces I was too lazy to buy a new remote. However, I wasn't too lazy to research the Roku external control HTTP API and build a web page remote served from my Raspberry Pi. Now I use it all of the time when I am too lazy to grab the remote."
 			}
 		]
 	},
@@ -70,12 +70,16 @@
 		"projectTypeDisplayName": "Open Source",
 		"projectsData": [
 			{
-				"name": "sedailyApi",
-				"displayName": "Software Engineering Daily API"
+				"name": "sedailyEvents",
+				"displayName": "Software Engineering Daily Event Stream",
+				"description": "The SEDaily event stream is responsible for authenticating connecting clients and validating event payload schemas before putting the event on the SED event bus. Interested clients can subscribe to events on the stream.",
+				"link": "https://github.com/SoftwareEngineeringDaily/sedaily-event-stream"
 			},
 			{
-				"name": "sedailyEvents",
-				"displayName": "Software Engineering Daily Event Stream"
+				"name": "sedailyApi",
+				"displayName": "Software Engineering Daily API",
+				"description": "The backend services and API for the Software Engineering Daily iOS, Android, and web platforms.",
+				"link": "https://github.com/SoftwareEngineeringDaily/software-engineering-daily-api"
 			}
 		]
 	},
@@ -86,7 +90,7 @@
 			{
 				"name": "plaWebmaster",
 				"displayName": "Professional Loadmaster Association Webmaster",
-				"description": "",
+				"description": "In addition to being a software engineer I'm also a loadmaster in the U.S. Air Force Reserve and a member of the Professional Loadmaster Association. I recently became the webmaster of the PLA where I'm not only in charge of the website but I'm leading the migration from disparate Excel files and Word docs to a managed membership service.",
 				"link": "https://www.loadmaster.com/"
 			}
 		]
