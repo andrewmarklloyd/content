@@ -20,7 +20,7 @@ export class ProjectsComponent {
     this.projectService.getProjects()
       .subscribe(res => {
         this.projects = JSON.parse(res.text());
-        this.activeProjectType = this.projects[1];
+        this.activeProjectType = this.projects[0];
       })
   }
 
