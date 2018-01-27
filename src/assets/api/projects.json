@@ -53,14 +53,15 @@
 			{
 				"name": "spotifyBot",
 				"displayName": "Spotify Bot",
-				"description": "This is one of my favorite tools and I use it almost every day. Mondays and Fridays Spotify's algorithm builds personalized playlists for me. This bot cross references songs in these playlists against songs that I've added to my library and adds them to a new playlist. This allows me to store all of the songs in these playlists that I like. Click the link below to show the playlist.",
+				"description": "This is one of my favorite tools that I wrote and I use it almost every day. Mondays and Fridays Spotify's algorithm builds personalized playlists for me. This bot cross references songs in these playlists against songs that I've added to my library and adds them to a new playlist. This allows me to store all of the songs in these playlists that I like. Click the link below to show the playlist.",
 				"embed": {
 					"buttonText": "Toggle Playlist"
 				}
 			},
 			{
 				"name": "rokuRemote",
-				"displayName": "ROKU Wifi Remote"
+				"displayName": "ROKU Wifi Remote",
+				"description": "When my dog Einstein chewed my Roku remote to pieces I was too lazy to buy a new remote. However, I wasn't too lazy to research the Roku external control HTTP API and build a web remote served from my Raspberry Pi."
 			}
 		]
 	},
