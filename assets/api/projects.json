@@ -6,7 +6,7 @@
 			{
 				"name": "status",
 				"displayName": "S.T.A.T.U.S. Board",
-				"description": "I led my team in architecting and developing a team status dashboard. The Angular 4 dashboard is updated in real time with via the Sockets.io connection to a Node.js server. The server makes periodic requests to GitLab, Bugzilla, Google Calendar, QA servers, and a Postgres database to aggregate data and send to the front end.",
+				"description": "I led my team in architecting and developing a team status dashboard. The Angular 4 dashboard is updated in real time via a Socket.io connection to a Node.js server. The server makes periodic requests to GitLab, Bugzilla, Google Calendar, multiple QA servers, and a Postgres database to aggregate data and send to the front end.",
 				"graphic": "assets/projects/status.png"
 			},
 			{
@@ -18,13 +18,13 @@
 			{
 				"name": "messageBoard",
 				"displayName": "MKC Message Board",
-				"description": "The Military Kids Connect message board allows kids to talk about their unique experiences. In my first project as a web devloper, I helped build the API for getting and submitting threads as well as managing the user profile information.",
+				"description": "The Military Kids Connect message board allows kids to talk about their unique experiences. In my first project as a web devloper, I helped build the API for getting and submitting messages as well as managing the user profile information.",
 				"link": "http://militarykidsconnect.dcoe.mil/mboard/"
 			},
 			{
 				"name": "brightcoveApi",
 				"displayName": "Brightcove API",
-				"description": "A small tool to use Brightcove's API that re-transcodes videos. This saved me time from using the UI to manually click through over 300 videos.",
+				"description": "A small tool that uses Brightcove's API to re-transcode videos. This saved me a ton of time from using the UI to manually click through over 300 videos to apply a new watermark.",
 				"link": "https://github.com/andrewmarklloyd/brightcove-api"
 			},
 			{
@@ -35,7 +35,7 @@
 			{
 				"name": "jenkinsBuildRelease",
 				"displayName": "Automated Deployment Package",
-				"description": "Our deployment process was unstable, error prone, and more accurately non-existent. It involved estimating the last code deployment date, performing a git diff of the current code base and that commit, and manually filtering out files that didn't need to be deployed. Things got more complicated when two different JS frameworks that required build processes were introduced to the repository. I organized my team to coordinate a Gitlab and Jenkins pipeline to build our deployment package.",
+				"description": "Our deployment process was unstable, error prone, and more accurately non-existent. It involved estimating the last code deployment date, performing a git diff of the current code base and that commit, and manually filtering out files that didn't need to be deployed. Things got more even complicated when two different JS frameworks that required build processes were introduced to the repository. I organized my team to coordinate a Gitlab and Jenkins pipeline to build our deployment package.",
 				"graphic": "assets/projects/Jenkins_Build_Release.png"
 			},
 			{
@@ -72,13 +72,13 @@
 			{
 				"name": "sedailyEvents",
 				"displayName": "Software Engineering Daily Event Stream",
-				"description": "The SEDaily event stream is responsible for authenticating connecting clients and validating event payload schemas before putting the event on the SED event bus. Interested clients can subscribe to events on the stream.",
+				"description": "The SEDaily event stream is responsible for authenticating connecting clients and validating event payload schemas before putting the event on the SED event bus. Interested clients can subscribe to events on the stream. I helped architect, build, and deploy this service. It was definitely one of my favorite projects to be a part of.",
 				"link": "https://github.com/SoftwareEngineeringDaily/sedaily-event-stream"
 			},
 			{
 				"name": "sedailyApi",
 				"displayName": "Software Engineering Daily API",
-				"description": "The backend services and API for the Software Engineering Daily iOS, Android, and web platforms.",
+				"description": "The backend services and API for the Software Engineering Daily iOS, Android, and web platforms. This project was my first time contributing to an open source project.",
 				"link": "https://github.com/SoftwareEngineeringDaily/software-engineering-daily-api"
 			}
 		]
