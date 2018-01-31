@@ -29,20 +29,20 @@ a, u {
 
 .work-projects {
 	background: mat-color($app-secondary);
-	color: mat-color($app-accent);
+	color: $app-white;
 }
 
 .side-projects {
-	background: mat-color($app-third);
-	color: mat-color($app-accent);
+	background: mat-color($app-fourth);
+	color: $app-white;
 }
 
 .open-source {
-	background: mat-color($app-fourth);
-	color: mat-color($app-accent);
+	background: mat-color($app-third);
+	color: $app-white;
 }
 
 .other {
 	background: mat-color($app-fifth);
-	color: mat-color($app-accent);
+	color: $app-white;
 }

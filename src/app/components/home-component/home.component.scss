@@ -1,3 +1,5 @@
+@import '../../../theme.scss';
+
 a, u {
 	text-decoration: none;
 }
@@ -11,7 +13,7 @@ img {
 }
 
 .color-text {
-	color: #1A237E;
+	color: mat-color($app-secondary);
 }
 
 .center-text {
@@ -26,23 +28,7 @@ img {
 	width: 40%;
 }
 
-.indigo1 {
-	background: #E8EAF6;
-	color: #1A237E;
+.blog-button {
+	background: mat-color($app-fifth);
+	color: $app-white;
 }
-
-.indigo2 {
-	background: #C5CAE9;
-	color: #283593;
-}
-
-.indigo3 {
-	background: #9FA8DA;
-	color: #FAFAFA;
-}
-
-.indigo4 {
-	background: #7986CB;
-	color: #FAFAFA;
-}
-

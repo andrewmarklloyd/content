@@ -1,0 +1,23 @@
+@import '../../../theme.scss';
+
+a, u {
+	text-decoration: none;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.header-image {
+	background-image: url('/assets/andrew.jpg');
+  background-size: cover;
+}
+
+.card-block {
+	padding-bottom: 15px;
+}
+
+.blog-button {
+	background: mat-color($app-fifth);
+	color: $app-white;
+}

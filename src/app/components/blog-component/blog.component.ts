@@ -6,7 +6,7 @@ import { ProjectsService } from '../../services/project.service';
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.css']
+  styleUrls: ['./blog.component.scss']
 })
 export class BlogComponent {
   posts;
@@ -32,14 +32,5 @@ export class BlogComponent {
           this.spinnerService.hide();
         })
       })
-  }
-
-  /*
-  * 
-  */
-  getPostLink() {
-
-  }
-
-  
+  }  
 }
