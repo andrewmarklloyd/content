@@ -1,0 +1,48 @@
+@import '../../../theme.scss';
+
+a, u {
+	text-decoration: none;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.project-title {
+	font-weight: bold;
+}
+
+.project-embed {
+	margin-top: 30px;
+}
+
+.project-image {
+	max-width: 92%;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.card-block {
+	padding-bottom: 15px;
+}
+
+.work-projects {
+	background: mat-color($app-secondary);
+	color: mat-color($app-accent);
+}
+
+.side-projects {
+	background: mat-color($app-third);
+	color: mat-color($app-accent);
+}
+
+.open-source {
+	background: mat-color($app-fourth);
+	color: mat-color($app-accent);
+}
+
+.other {
+	background: mat-color($app-fifth);
+	color: mat-color($app-accent);
+}
