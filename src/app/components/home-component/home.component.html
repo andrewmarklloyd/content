@@ -7,7 +7,7 @@
     <mat-card>
       <div fxFlex="95%">
         <mat-card-header>
-          <span class="mat-title color-text">Software Engineer</span>
+          <span class="mat-title color-text card-title-text">Software Engineer</span>
         </mat-card-header>
         <img mat-card-image src="assets/andrew.jpg" alt="Andrew Lloyd Esquire">  
       </div>
@@ -15,7 +15,7 @@
       <div fxFlex="80%" class="card-content">
         <mat-card-content>
           <div *ngFor="let block of introText;">
-            <p class="color-text mat-body-2">
+            <p class="color-text mat-body-2 card-block-text">
               {{block.text}}
             </p>
           </div>
@@ -31,10 +31,10 @@
     <div>
       <mat-card>
         <mat-card-header>
-          <div class="mat-title color-text">Software Engineer</div>
+          <div class="mat-title color-text card-title-text">Software Engineer</div>
         </mat-card-header>
         <img src="assets/andrew.jpg" alt="Andrew Lloyd Esquire">
-        <mat-card-content class="color-text">
+        <mat-card-content class="card-block-text">
           <div *ngFor="let block of introText;">
             <p>
               {{block.text}}

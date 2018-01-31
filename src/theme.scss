@@ -30,3 +30,13 @@ $app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
 .center-text {
 	text-align: center;
 }
+
+.card-block-text {
+	color: mat-color($app-primary);
+	font-size: 1.2em;
+}
+
+.card-title-text {
+	color: mat-color($app-primary);
+	font-size: 1.4em;
+}

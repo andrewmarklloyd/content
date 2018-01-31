@@ -6,13 +6,13 @@
 		  <mat-card-header>
 		  	<div mat-card-avatar class="header-image"></div>
 		    <mat-card-title>
-		      <div class="mat-title">
+		      <div class="mat-title card-title-text">
 		         {{post.title}} | {{post.postPublished}}
 		      </div>
 		    </mat-card-title>
 		  </mat-card-header>
 		  <mat-card-content>
-	      <div class="mat-body-1" [innerHTML]="post.content"></div>
+	      <div class="mat-body-1 card-block-text" [innerHTML]="post.content"></div>
 		  </mat-card-content>
 		  <mat-card-actions>
 		    <a [href]="post.url"><button class="link-button" mat-button>Original Blogspot Post</button></a>
