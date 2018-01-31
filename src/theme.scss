@@ -8,6 +8,7 @@ $app-secondary: mat-palette($mat-blue-grey, 500);
 $app-third:  mat-palette($mat-blue-grey, 400);
 $app-fourth:  mat-palette($mat-blue-grey, 300);
 $app-fifth:  mat-palette($mat-blue-grey, 200);
+$app-sixth:  mat-palette($mat-blue-grey, 100);
 
 $app-white: #FFFFFF;
 $app-accent:  mat-palette($mat-blue-grey, 50);
@@ -17,3 +18,15 @@ $app-warn:    mat-palette($mat-deep-orange);
 $app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
 
 @include angular-material-theme($app-theme);
+
+.link-button {
+	color: mat-color($app-secondary);
+}
+
+.link-button:hover {
+	background: mat-color($app-accent);
+}
+
+.center-text {
+	text-align: center;
+}

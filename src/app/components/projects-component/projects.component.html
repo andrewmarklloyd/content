@@ -37,7 +37,7 @@
     </mat-grid-list>
     <br>
     <div *ngIf="activeProjectType">
-      <div class="mat-title">
+      <div class="mat-title card-title-text">
         {{activeProjectType.projectTypeDisplayName}}    
       </div>
       
@@ -45,13 +45,13 @@
         <mat-card class="mat-padding">
           <mat-card-header>
             <mat-card-title>
-              <div class="mat-subheading-2 project-title">
+              <div class="mat-subheading-2 project-title card-title-text">
                 {{project.displayName}}
               </div>
             </mat-card-title>
           </mat-card-header>
           <mat-card-content>
-            <div class="mat-body-1">
+            <div class="mat-body-1 card-block-text">
               {{project.description}}
             </div>
             <div class="project-image" *ngIf="project.graphic">
@@ -63,7 +63,7 @@
           </mat-card-content>
           
           <mat-card-actions>
-            <a *ngIf="project.link" [href]="project.link"><button mat-button>LINK</button></a>
+            <a *ngIf="project.link" [href]="project.link"><button class="link-button" mat-button>LINK</button></a>
             <a *ngIf="project.embed"><button (click)="toggleEmbedContent()" mat-button>{{project.embed.buttonText}}</button></a>
           </mat-card-actions>
         </mat-card>

@@ -16,6 +16,16 @@ a, u {
 	margin-top: 30px;
 }
 
+.card-block-text {
+	color: mat-color($app-primary);
+	font-size: 1.2em;
+}
+
+.card-title-text {
+	color: mat-color($app-primary);
+	font-size: 1.4em;
+}
+
 .project-image {
 	max-width: 92%;
 	margin-top: 40px;

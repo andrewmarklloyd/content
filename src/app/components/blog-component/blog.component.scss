@@ -4,10 +4,6 @@ a, u {
 	text-decoration: none;
 }
 
-.center-text {
-	text-align: center;
-}
-
 .header-image {
 	background-image: url('/assets/andrew.jpg');
   background-size: cover;
@@ -17,7 +13,3 @@ a, u {
 	padding-bottom: 15px;
 }
 
-.blog-button {
-	background: mat-color($app-fifth);
-	color: $app-white;
-}
