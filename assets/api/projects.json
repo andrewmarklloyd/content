@@ -59,6 +59,11 @@
 				}
 			},
 			{
+				"name": "aircrewApp",
+				"displayName": "Aircrew Application",
+				"description": "I was originially developing an Ionic (Cordova+Angularjs) quiz application targeted at increasing aviation knowledge among USAF aircrew. I'm extending it to not only include the quiz but other features like recipes made specifically for the C-17 and a customizable packing list."
+			},
+			{
 				"name": "rokuRemote",
 				"displayName": "ROKU Wifi Remote",
 				"description": "When my dog Einstein chewed my Roku remote to pieces I was too lazy to buy a new remote. However, I wasn't too lazy to research the Roku external control HTTP API and build a web page remote served from my Raspberry Pi. Now I use it all of the time when I am too lazy to grab the remote."
@@ -76,6 +81,12 @@
 				"link": "https://github.com/SoftwareEngineeringDaily/sedaily-event-stream"
 			},
 			{
+				"name": "sedailySlackBot",
+				"displayName": "Software Engineering Daily Slack Bot",
+				"description": "I built a general purpose Slack App for the SEDaily team. The newest feature responds to new users joining the sed_app_development channel with a DM giving them information on contributing and links to project issues labeled 'good first issue'. The Slack app is deployed using http://webtask.io.",
+				"link": "https://github.com/andrewmarklloyd/webtasks/blob/master/sedaily/index.js"
+			},
+			{
 				"name": "sedailyApi",
 				"displayName": "Software Engineering Daily API",
 				"description": "The backend services and API for the Software Engineering Daily iOS, Android, and web platforms. This project was my first time contributing to an open source project.",
@@ -88,10 +99,16 @@
 		"projectTypeDisplayName": "Other",
 		"projectsData": [
 			{
+				"name": "loadmaster",
+				"displayName": "USAF Reserve Loadmaster",
+				"description": "I have served 4 years of active duty and over 8 years of Reserve duty as a C-17A loadmaster where I am responsible for properly loading, securing and escorting cargo and passengers. From calculating proper weight distribution to providing for passenger comfort throughout the flight, I ensure everything and everyone is safe and secure on flights all over the world. In addition to flight duties I am the squadron career advisor where I advise squadron members on career progression and planning, determine reenlistment eligibility, and discussing additional military career options.",
+				"link": "https://en.wikipedia.org/wiki/Loadmaster"
+			},
+			{
 				"name": "plaWebmaster",
 				"displayName": "Professional Loadmaster Association Webmaster",
-				"description": "In addition to being a software engineer I'm also a loadmaster in the U.S. Air Force Reserve and a member of the Professional Loadmaster Association. I recently became the webmaster of the PLA where I'm not only in charge of the website but I'm leading the migration from disparate Excel files and Word docs to a managed membership service.",
-				"link": "https://www.loadmaster.com/"
+				"description": "The PLA is a non-profit organization dedicated to bringing the loadmaster community together. I recently became the webmaster of the PLA where I'm not only in charge of the website but I'm leading the migration from disparate Excel files and Word docs to a managed membership service.",
+				"link": "https://www.loadmasters.com/"
 			}
 		]
 	}
