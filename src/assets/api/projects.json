@@ -83,7 +83,7 @@
 			{
 				"name": "sedailySlackBot",
 				"displayName": "Software Engineering Daily Slack Bot",
-				"description": "I built a general purpose Slack App for the SEDaily team. The newest feature responds to new users joining the sed_app_development channel with a DM giving them information on contributing and links to project issues labeled 'good first issue'. The Slack app is deployed using http://webtask.io.",
+				"description": "I built a general purpose Slack App for the SEDaily team. The first feature implemented responds to new users joining the sed_app_development channel with a DM giving them information on contributing and links to project issues labeled 'good first issue'. The Slack app is deployed using http://webtask.io.",
 				"link": "https://github.com/andrewmarklloyd/webtasks/blob/master/sedaily/index.js"
 			},
 			{
