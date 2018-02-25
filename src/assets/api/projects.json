@@ -61,7 +61,7 @@
 			{
 				"name": "aircrewApp",
 				"displayName": "Aircrew Application",
-				"description": "I was originially developing an Ionic (Cordova+Angularjs) quiz application targeted at increasing aviation knowledge among USAF aircrew. I'm extending it to not only include the quiz but other features like recipes made specifically for the C-17 and a customizable packing list."
+				"description": "I was originially developing an Ionic (Cordova+Angularjs) quiz application targeted at increasing aviation knowledge among USAF aircrew. I'm extending it to not only include the quiz but other features like recipes made specifically for the C-17 and a customizable packing list. Source code will be available soon."
 			},
 			{
 				"name": "rokuRemote",
