@@ -1,3 +1,4 @@
+import { ParamMap, Router, ActivatedRoute } from '@angular/router';
 import { Component } from '@angular/core';
 import { ProjectsService } from '../../services/project.service';
 
@@ -9,24 +10,28 @@ import { ProjectsService } from '../../services/project.service';
 export class ProjectsComponent {
   showEmbedContent: boolean;
   activeProjectType: Object;
-  showMore: boolean;
-  toggleText: String;
   projects: Array<Object>;
+  projectType: String;
 
-  constructor(private projectService: ProjectsService) {
+  constructor(private projectService: ProjectsService,
+              private activatedRoute: ActivatedRoute,
+              private router: Router) {
     this.showEmbedContent = false;
-    this.showMore = false;
-    this.toggleText = 'MORE';
     this.projectService.getProjects()
       .subscribe(res => {
         this.projects = JSON.parse(res.text());
         this.activeProjectType = this.projects[0];
+        const storageProjectType = window.localStorage.getItem('_projectType');
+        const queryProjectType = this.activatedRoute.snapshot.queryParams.type;
+        this.activatedRoute.snapshot.queryParams.type
+        if (storageProjectType) {
+          this.toggleProject(storageProjectType);
+        } else if (queryProjectType) {
+          this.toggleProject(queryProjectType);
+        } else {
+          this.toggleProject(this.projects[0]['projectType'])
+        }
       })
-  }
-
-  toggleMore() {
-    this.showMore = !this.showMore;
-    this.toggleText = this.showMore ? 'LESS' : 'MORE';
   }
 
   updateProgressValue(progressValue) {
@@ -39,12 +44,18 @@ export class ProjectsComponent {
     return newProgressValue;
   }
 
-  test(projectType) {
-    const index = this.getProjectType(projectType, this.projects);
+  setQueryParams(projectType) {
+    const queryParams = Object.assign({}, this.activatedRoute.snapshot.queryParams);
+    queryParams['type'] = projectType;
+    this.router.navigate(['projects'], { queryParams: queryParams });
+  }
+
+  toggleProject(projectType) {
+    this.setQueryParams(projectType);
+    var index = this.getProjectType(projectType, this.projects);
+    index = index ? index : 0;
     this.activeProjectType = this.projects[index];
-    if (this.showMore) {
-      this.toggleMore();
-    }
+    window.localStorage.setItem('_projectType', this.activeProjectType['projectType']);
   }
 
   getProjectType(projectType: String, projects: Array<Object>) {
