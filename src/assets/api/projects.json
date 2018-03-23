@@ -83,7 +83,7 @@
 			{
 				"name": "sedailySlackBot",
 				"displayName": "Software Engineering Daily Slack Bot",
-				"description": "I built a Slack App for the SEDaily team. The first feature implemented responds to new users joining the sed_app_development channel with a DM giving them information on contributing and links to project issues labeled 'good first issue'. Other features include a slash command that gets a Grafana snapshot URL for the monthy event summaries from the event stream database as well as others in development. The Slack app is deployed using http://webtask.io.",
+				"description": "I built a Slack App for the SEDaily team. The first feature implemented responds to new users joining the sed_app_development channel with a DM giving them information on contributing and links to project issues labeled 'good first issue'. Other features include a slash command that gets a Grafana snapshot URL for the monthly event summaries from the event stream database as well as others in development. The Slack app is deployed using http://webtask.io.",
 				"link": "https://github.com/andrewmarklloyd/webtasks/blob/master/sedaily/index.js"
 			},
 			{
