@@ -53,10 +53,11 @@
 			{
 				"name": "spotifyBot",
 				"displayName": "Spotify Bot",
-				"description": "This is one of my favorite tools that I wrote and I use it almost every day. Mondays and Fridays Spotify's algorithm builds personalized playlists for me. This bot cross references songs in these playlists against songs that I've added to my library and adds them to a new playlist. This allows me to store all of the songs in these playlists that I like. Click the link below to show the playlist.",
+				"description": "This is one of my favorite tools that I wrote and I use it almost every day. Mondays and Fridays Spotify's algorithm builds personalized playlists for me. This bot cross references songs in these playlists against songs that I've added to my library and adds them to a new playlist. This allows me to store all of the songs in these playlists that I like. The app is currently hosted on my Raspberry Pi. I am now implementing this bot as a full web application available for anyone to use. Click the button below to display the playlist or click the link to see the source code.",
 				"embed": {
 					"buttonText": "Toggle Playlist"
-				}
+				},
+				"link": "https://github.com/andrewmarklloyd/spotify-playlist-manager"
 			},
 			{
 				"name": "aircrewApp",
