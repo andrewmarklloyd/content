@@ -1,8 +1,8 @@
 [
 	{
-		"text": "I'm currently a technical lead and contract web developer for the U.S. Army, primarily using PHP, Angular 4 and Ember.js frameworks. I have experience in tooling and ops, introducing continuous integration and administering our local Gitlab and Jenkins instances and other connected NodeJS applications, including a backend API service for a developer dashboard. At my previous position I was responsible for maintaining a Java codebase for a sensor data aggregation system for the US Navy."
+		"text": "I'm currently a web developer primarily using PHP, Angular 4 and Node.js frameworks. My passion is implementing DevOps tools and evangelizing its practices. I introduced continuous integration methodologies and manage a Linux CI server running Gitlab and Jenkins instances as well as other connected Node.js applications, including a backend API service supporting a custom developer dashboard. At my previous position I was responsible for adding new features to the Java codebase for a sensor data aggregation system for the US Navy."
 	},
 	{
-		"text": "The project I'm most excited about is designing and implementing an event log architecture using Redis Streams for the Software Engineering Daily open source application."
+		"text": "I'm most excited about working with the Software Engineering Daily open source community. Currently I am implementing the event log architecture comprosing a Node.js API that validates events and feeds them into an InfluxDB instance. We then use Grafana to build dashboards for reporting an alerting. I'm also building a Dockerized API and database to support softwaredaily.com's end-to-end testing."
 	}
 ]
