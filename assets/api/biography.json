@@ -1,6 +1,6 @@
 [
 	{
-		"text": "I'm currently a web developer primarily using PHP, Angular 4 and Node.js frameworks. My passion is implementing DevOps tools and evangelizing its practices. I introduced continuous integration methodologies and manage a Linux CI server running Gitlab and Jenkins instances as well as other connected Node.js applications, including a backend API service supporting a custom developer dashboard. At my previous position I was responsible for adding new features to the Java codebase for a sensor data aggregation system for the US Navy."
+		"text": "My passion is in full stack software development and implementing DevOps tools and evangelizing its practices. In my previous position I introduced continuous integration methodologies and managed a Linux CI server running Gitlab and Jenkins instances as well as other connected Node.js applications, including a backend API service supporting a custom developer dashboard. In a different past position I was responsible for adding new features to the Java codebase for a sensor data aggregation system for the US Navy."
 	},
 	{
 		"text": "I'm most excited about working with the Software Engineering Daily open source community. Currently I am implementing the event log architecture comprising a Node.js API that validates events and feeds them into an InfluxDB instance. We then use Grafana to build dashboards for reporting and alerting. I'm also building a Dockerized API and database to support softwaredaily.com's end-to-end testing."
