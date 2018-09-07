@@ -1,8 +1,8 @@
 [
 	{
-		"text": "My passion is in full stack software development and implementing DevOps tools and evangelizing its practices. In my previous position I introduced continuous integration methodologies and managed a Linux CI server running Gitlab and Jenkins instances as well as other connected Node.js applications, including a backend API service supporting a custom developer dashboard. In a different past position I was responsible for adding new features to the Java codebase for a sensor data aggregation system for the US Navy."
+		"text": "I am a DevOps Engineer for Starbucks as part of the Cloud Foundation Services (CFS) team supporting multiple Starbucks products. My team is responsible for the installation, configuration, monitoring, analysis, maintenance, and technical support of the infrastructure platform. After separating from active duty Air Force service I got my start in engineering working on several government contracts moving my way from Java enterprise software development, to web development, to implementing continuous integration. I love the work I'm doing now and feel lucky to be where I am!"
 	},
 	{
-		"text": "I'm most excited about working with the Software Engineering Daily open source community. Currently I am implementing the event log architecture comprising a Node.js API that validates events and feeds them into an InfluxDB instance. We then use Grafana to build dashboards for reporting and alerting. I'm also building a Dockerized API and database to support softwaredaily.com's end-to-end testing."
+		"text": "I'm also excited about helping to maintain the Software Engineering Daily open source community. Currently I am refactoring the CI/CD pipelines as well as improving developer experience."
 	}
 ]
