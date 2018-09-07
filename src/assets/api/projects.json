@@ -80,7 +80,7 @@
 				"name": "sedailyEvents",
 				"displayName": "Software Engineering Daily Event Stream",
 				"description": "The SEDaily event stream is responsible for authenticating connecting clients and validating event payload schemas before putting the event on the SED event bus. Interested clients can subscribe to events on the stream. I helped architect, build, and deploy this service. It was definitely one of my favorite projects to be a part of.",
-				"link": "https://github.com/SoftwareEngineeringDaily/sedaily-event-stream"
+				"link": "https://github.com/SoftwareEngineeringDaily/sedaily-devops"
 			},
 			{
 				"name": "sedailySlackBot",
