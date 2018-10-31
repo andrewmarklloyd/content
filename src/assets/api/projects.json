@@ -30,12 +30,12 @@
 			{
 				"name": "dockerMkc",
 				"displayName": "Dockerized Developement Environment",
-				"description": "Our Drupal, IIS, and SQL Server stack was very difficult to locally configure and was wasting a lot of developer time. I created Dockerized development environment and accompanying scripts allowing developers to have an up and running environment in minutes."
+				"description": "My team's Drupal, IIS, and SQL Server stack was very difficult to locally configure and was wasting a lot of developer time. I created Dockerized development environment and accompanying scripts allowing developers to have an up and running environment in minutes."
 			},
 			{
 				"name": "jenkinsBuildRelease",
 				"displayName": "Automated Deployment Package",
-				"description": "Our deployment process was unstable, error prone, and more accurately non-existent. It involved estimating the last code deployment date, performing a git diff of the current code base and that commit, and manually filtering out files that didn't need to be deployed. Things got more even complicated when two different JS frameworks that required build processes were introduced to the repository. I organized my team to coordinate a Gitlab and Jenkins pipeline to build our deployment package.",
+				"description": "My team's deployment process was unstable, error prone, and more accurately non-existent. It involved estimating the last code deployment date, performing a git diff of the current code base and that commit, and manually filtering out files that didn't need to be deployed. Things got more even complicated when two different JS frameworks that required build processes were introduced to the repository. I organized my team to coordinate a Gitlab and Jenkins pipeline to build our deployment package.",
 				"graphic": "assets/projects/Jenkins_Build_Release.png"
 			},
 			{
